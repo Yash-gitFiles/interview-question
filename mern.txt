@@ -143,5 +143,22 @@ it is a component that is used when the props are not changing.
 and use for only class component,  not for functional component.
 but use for in function component i have use memo() hook in react.
 
+*******************************
+useActionState () hook in react ?
+Pass an asynchronous function to useActionState that performs a specific action, like fetching data or submitting a form.
+Use the returned state variables and action trigger (loading, error, result, and triggerAction) in your component.
+after ui change
 
 *******************************
+useOptimistic () hook in react ?
+The useOptimistic hook is useful when you want to immediately update the UI based on user actions, before waiting for a response from an asynchronous operation (like an API call), and then revert the update if the operation fails.
+first ui change
+
+*******************************
+difference between useActionState & useOptimistic hook ?
+UI Update : 
+    useActionState = UI changes after the async operation completes
+    useOptimistic = UI changes immediately, before the async operation completes
+State Returned : 
+    useActionState = loading, data, error
+    useOptimistic = state, loading, error, optimisticAction
