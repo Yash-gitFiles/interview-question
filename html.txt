@@ -1,0 +1,9 @@
+*******************************
+difference between span& div tag ?
+span tag : does not create a new line 
+         : is an inline element
+div tag : create a new line 
+        : is an block element
+
+*******************************
+

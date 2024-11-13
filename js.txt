@@ -1,0 +1,102 @@
+*******************************
+ternary operator & if,else statement ?
+simple condition can be apply ternary operator otherwise i will apply on if,else condition because if,else is a more than apply condition and ternary can be apply true or false part.
+so depend on situation use of ternary or if,else.
+ES6 new version of ternary operator, and do not return statement and if,else is an  old version of ternary operator.
+syntax wise difference ternary and if,else.
+if,else is an statement in js.
+ternary is an expression in js, expression means output will be a single value.
+
+*******************************
+closures in javascript ? 
+closures is an function.
+function outer(){
+    let a = 10;
+    function inner(){
+        console.log(a); // access the value for parent function, it is known as a closures(create a lexical scope)
+    }
+    return inner;
+}
+outer()
+closures is an function which is return another function.
+
+
+*******************************
+console.log(a);
+console.log(b);
+var a = b = 10;
+// reference error.
+
+*******************************
+var a = 5;
+console.log(a++); // 5
+console.log(a) // 6
+
+*******************************
+const fun = () => {
+    console.log(this.name) // undefined
+}
+
+fun.call({name : "yash"})
+arrow function this binding is not possible.
+
+*******************************
+const fun = function(){
+    console.log(this.name); // yash
+    const inner = () => {
+        console.log(this.name) // yash
+    }
+    inner()
+}
+fun.call({name : "yash"}) 
+
+*******************************
+freeze the user Object.
+const user = {
+    id : 1,
+    name  : "yash",
+    age : 22,
+    address : {
+        city : "surat",
+        state : "gujarat",
+    }
+}
+
+Object.freeze(user)
+
+*******************************
+freeze the user.id
+const user = {
+    id : 1,
+    name  : "yash",
+    age : 22,
+    address : {
+        city : "surat",
+        state : "gujarat",
+    }
+}
+
+Object.defineProperty(user, 'id', {
+    writable: false, 
+    configurable: false  
+});
+
+freeze the only user.id
+
+*******************************
+data type in js ?
+i) primitive data type ii) non primitive type.
+i) primitive data type : number, string, boolean, null, undefined, symbol, bigInt
+ii) non primitive type : object.
+
+*******************************
+What is the difference between slice() and splice() ?
+i)slice : 
+    const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+    const citrus = fruits.slice(1, 3); // orange , Lemon
+    return a updated array
+
+ii) splice :
+    splice can not be provide a negative index.
+    do not return a updated array
+

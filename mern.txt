@@ -1,0 +1,147 @@
+what is replication in MongoDB ?
+Replication in MongoDB involves creating multiple copies of data across different servers, known as replica sets.
+
+*******************************
+what is HOC ?
+HOC means higher order components.
+HOC is an access the parameter one components & return one components.
+
+
+*******************************
+why use HOC ?
+common the logic  of the component is not belong to the component. so we use HOC. 
+
+*******************************
+function component & class component ?
+function component is an updated  version of class component. function component is more faster than class component.
+class component is use react life cycle method & function component is use for react hooks. 
+
+*******************************
+What is the purpose of ExpressJS ?
+The purpose of ExpressJS is to provide a flexible and lightweight framework for building web applications. It allows
+developers to create web servers, handle HTTP requests and responses, and connect to databases.
+
+*******************************
+virtual DOM in react ?
+Virtual DOM is a lightweight in-memory representation of the real DOM. It is used by React to optimize
+rendering and improve performance. When the state of the application changes, React updates the virtual DOM
+and then efficiently updates the real DOM by comparing the two and only making the necessary changes.
+work for the comparing it is known as a diffing-algorithm
+
+
+*******************************
+What is middleware in Node.js and how is it used ?
+middleware is an middleman  between the request & response and main  purpose of middleware is to perform some
+task before the request is passed to the next middleware or the final handler.do not load direct server using middleware.
+
+*******************************
+Explain the event loop in Node JS.
+if suppose user send a request an server, this request store in task queue, and it working on FIFO(first in first out)method.
+when the event loop is free, it take one task from the task queue and execute it and after it will be check request is an async or sync.    
+
+*******************************
+What are node JS streams ? 
+streams are 4 part :  readable, writable, duplex, transform.
+
+*******************************
+react life-cycle-method ? 
+main 3 parts in react-life-cycle. i)mounting ii)updating iii)unmounting.
+i)mounting : 
+    constructor ->  getDerivedStateFromProps -> render -> componentDidMount
+ii)updating : 
+    getDerivedStateFromProps ->  shouldComponentUpdate -> render -> getSnapshotBeforeUpdate -> componentDidUpdate
+iii)unmounting : 
+    componentDidUnmount
+
+*******************************
+what is redux ?
+redux is an state management at a top-level element. first of all create a store and configure the store after that createSlices.
+And select a value use the useSelector.
+do not changes direct change in redux, so for this purpose we use dispatch hook.
+
+
+*******************************
+what is MongoDB ? how does differ from SQL database ?
+MongoDB is an database,  it is a NoSQL database. it is a document based database.
+different because  of SQL database is table based database. in SQL database we use query language for query data.
+
+*******************************
+Can you explain what a document is in MongoDB?
+A document in MongoDB is a collection of key-value pairs. like JSON.
+eg : 
+    {
+  "_id": ObjectId("603c9f1a2f1a2c001f8b4567"),
+  "name": "Alice",
+  "age": 30,
+  "hobbies": ["reading", "traveling"],
+  "address": {
+    "street": "123 Main St",
+    "city": "surat",
+    "zip": "12345"
+  }
+    }
+
+*******************************
+What are some common aggregation methods in MongoDB?
+Some common aggregation methods in MongoDB are: 
+    i)match : filter the data
+    ii)group :  group the data
+    iv)sort :  sort the data
+    v)limit :   limit the data
+    vi)skip : skip the data.
+
+
+     
+
+*******************************
+what is ExpressJS ? why use is MERN stack ?
+ExpressJS is a Node.js web framework for building web applications and APIs. It is a lightweight.
+most up developer use in ExpressJS, because  it is easy to use and fast. and it is a free and open-source.
+
+*******************************
+Can you explain middleware in Express? Provide an example.
+Middleware in Express is a function that has access to the request object (req), the response object (
+    res), and the next middleware function in the application’s request-response cycle. The next middleware function is
+    typically accessed using the `next()` function.
+    example :
+    app.use("/login" , loginValidation , login)
+    this example loginValidation is an middleware.
+
+
+*******************************
+How do you handle error management in Express.js?
+Error management in Express.js can be handled using the following methods :
+i)try-catch block
+ii)error handling middleware
+
+*******************************
+What are the key features of React?
+key is an special object.  it is used to keep track of the component state.
+if i am use for a generally loop for out code.
+then we use map() function. and if we use for a generally loop for out code.
+this time i will use the key.
+
+
+*******************************
+http status code ? 
+100 - 199 -> informational  response
+200 - 299 ->  success
+300 - 399 ->  redirect
+400 - 499 ->  client error
+500 - 599 -> server error
+
+200 - ok status code
+201 - ok but send a request(signUp,login) 
+400 - bad request status code
+401 - Unauthorized
+500 - server error
+
+*******************************
+what is pure component in react ?
+Pure component is a component that does not change its state when the props change.
+it is a component that is used when the props are not changing.
+and use for only class component,  not for functional component.
+but use for in function component i have use memo() hook in react.
+
+
+*******************************

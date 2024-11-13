@@ -1,0 +1,14 @@
+*******************************
+position property in css ?
+total 5 property in position css : 
+1) static 2) fixed 3) sticky 4) absolute 5) relative
+1) static : by default property 
+2) fixed : element is fixed in the page, fixed position is relative the viewport(vh/vw) not relative a body.
+3) sticky : let suppose by default i have create a one div &  i have scroll the page then that div will be fixed in the page.
+4) absolute : relative a ancestor/parent position 
+5) relative : relative to it self.
+
+*******************************
+inline & block element ?
+ <a>, <p> , <span> = inline tag 
+<div> , <heading tag> , <select> , <ul> = block tag

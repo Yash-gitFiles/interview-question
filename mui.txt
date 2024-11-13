@@ -1,0 +1,62 @@
+mui using for style and layout. I am trying to create a responsive layout that will work on both desktop and mobile device
+
+step mui style = 
+import the style :
+  "@emotion/react": "^11.13.3",
+  "@emotion/styled": "^11.13.0",
+  "@mui/icons-material": "^6.1.6",
+  "@mui/material": "^6.1.6",
+
+
+*******************************
+theme in mui :
+    theme use because centralize the style and re-usable the style in the app.
+    const theme = createTheme({
+         palette : {
+            return the style of color 
+        }
+    })
+
+    export default theme
+
+    wrap the app component like this.
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+
+      and use like this 
+        const ButtonStyle = styled(Button)(({ theme }) => ({
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.secondary.main,
+    "&:hover": {
+      backgroundColor: theme.palette.primary.light,
+      color: "black",
+    },
+    }));
+
+      <ButtonStyle>Style Button</ButtonStyle>
+
+
+*******************************
+how to use flex box in mui style ?
+1) Box = 
+    box is an div nothing else.
+2) Container = 
+    container is an like this Box or div but it has some style like margin, padding, width, height, etc.
+3) Stack = 
+    stack is concerned with one dimensional layouts, like horizontal or vertical.
+    default direction is an horizontal stack.
+    e.g = 
+        <Stack direction="row" spacing={2}>
+          <Item>Item 1</Item>
+          <Item>Item 2</Item>
+          <Item>Item 3</Item>
+        </Stack>
+
+*******************************
+
+
+
+difference between variant and component in mui ?
+   tract variant h6 but is an real behavior is a p
+        <Typography variant="h6" component="p">MUI</Typography>
