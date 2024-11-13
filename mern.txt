@@ -162,3 +162,8 @@ UI Update :
 State Returned : 
     useActionState = loading, data, error
     useOptimistic = state, loading, error, optimisticAction
+
+
+*******************************
+useFormState () hook in react ?
+useFormStatus: This hook tracks the status of form submissions, including whether the form is currently submitting, the data being sent, and the HTTP method used. It's particularly helpful for tracking form submission states across components without the need for prop drilling
