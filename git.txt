@@ -1,1 +1,54 @@
+*******************************
+step 1 : basic GitHub
+*******************************
+Git & GitHub 
+Git is a version control system that is used to track changes to your files. 
+It is a free and open-source software that is available for Windows, macOS, and Linux. Remember, GIT is a software and can be installed on your computer.
 
+Github is a web-based hosting service for Git repositories. Github is an online platform that allows you to store and share your code with others. It is a popular platform for developers to collaborate on projects and to share code. It is not that Github is the only provider of Git repositories, but it is one of the most popular ones.
+
+
+*******************************
+Download the git on your computer.
+https://git-scm.com/downloads.
+
+*******************************
+Account on GitHub
+
+*******************************
+step 2 : GitHub terminology
+*******************************
+
+check the version on GitHub 
+git --version
+
+*******************************
+git status
+git status command ka use hum apne Git repository ke current status ko check karne ke liye karte hain. Ye command hume ye batata hai ki kaunse changes staged hain, kaunse changes abhi tak staged nahi hue hain, aur kaunse naye files hain jo abhi tak Git mein track nahi ho rahe hain.
+
+*******************************
+git config --global user.email "your-email@example.com"
+git config --global user.name "Your Name"
+
+
+git status
+git init
+git add
+git commit -m "committed name"
+git push
+
+unstage file = git rm --cached <file name>
+
+*******************************
+.gitkeep
+How to Track and Push Empty Folders in Git
+
+*******************************
+step 3 : Git behind the scene
+*******************************
+Git Snapshots
+
+Git snapshots ka matlab hai ki Git har commit ke saath aapke project ka ek snapshot bana leta hai.
+Matlab jab bhi aap code mein changes karte ho aur unko commit karte ho, to Git uss moment ka ek record bana leta hai, jo aap future mein dekh sakte ho ya kisi specific point pe wapas ja sakte ho.
+
+Jab aap code mein koi change karte ho, to Git uss change ko track karta hai aur jab aap git commit command use karte ho, to Git ek snapshot (ya phir ek version) save kar leta hai. Is snapshot mein sirf woh changes save hote hain jo aapne kiye hote hain, na ki poora project. Git har commit ke saath ek unique ID (hash) assign karta hai, jo us snapshot ko identify karta hai.
