@@ -52,3 +52,35 @@ Git snapshots ka matlab hai ki Git har commit ke saath aapke project ka ek snaps
 Matlab jab bhi aap code mein changes karte ho aur unko commit karte ho, to Git uss moment ka ek record bana leta hai, jo aap future mein dekh sakte ho ya kisi specific point pe wapas ja sakte ho.
 
 Jab aap code mein koi change karte ho, to Git uss change ko track karta hai aur jab aap git commit command use karte ho, to Git ek snapshot (ya phir ek version) save kar leta hai. Is snapshot mein sirf woh changes save hote hain jo aapne kiye hote hain, na ki poora project. Git har commit ke saath ek unique ID (hash) assign karta hai, jo us snapshot ko identify karta hai.
+
+
+
+*******************************
+step 4 : git branch
+*******************************
+Git branches ka matlab hai project ke alag-alag versions ya paths par kaam karna bina main code (main branch) ko affect kiye.
+Branch ek parallel line jaisi hoti hai, jisme aap naye features ya changes try kar sakte ho.
+
+*******************************
+create a new branch
+git branch branch-name
+
+*******************************
+switch a branch
+git checkout branch-name
+
+*******************************
+merge file
+git merge branch-name
+
+*******************************
+delete the branch
+git branch -d branch-name
+
+*******************************
+create a new branch and switch a branch
+git switch -c dark-mode
+
+*******************************
+rename branch name
+git branch -m <old-branch-name> <new-branch-name>
